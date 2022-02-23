@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project ELAR</title>
+    <style>
+        body{
+            background: linear-gradient(15deg, #ffffff 0%, #fff5ce 100%) fixed;
+            max-width: 600px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+            color: #3F3FBF;
+            text-align: left
+        }
+        .check {
+            color: #40929b;
+            text-align: left;
+        }
+        .middle {
+            margin: 5 px auto;
+            border: 2 px solid #546a6d;
+            background: white;
+
+        }
+        .write {
+
+            min-width: 80%;
+
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Module 1: Courage in the Face of Fear</h1>
+    <img src='https://media.istockphoto.com/photos/firefighters-extinguishing-house-fire-picture-id160189933?s=612x612'width=400px
+    >
+    <div class='middle'>
+    <h3>
+      <div class="top">Writing Prompt:</div>
+      Describe a time in your life when you were courageous. 
+    </h3>
+     <p>Your answer should be at least 5 sentences.</p>
+     <input class='write'type=text placeholder="Write your response here." required minlength= '128' size='15' width='300px'> 
+    <p><div class='check'>Before you submit, help yourself by checking: </div>
+        <ul class='check'><em>
+            <li>Does every sentence start with a capital letter? 
+                <input type='checkbox' id=yes name=yes required>
+                <label for='yes'>Yes</label> 
+            </li>
+            <li>Does every sentence end with a period?</li> 
+                <input type='checkbox' id=yes name='yes'required> 
+                <label for='yes'>Yes</label>
+            </li>
+            </em>
+        </ul>
+        <input type=button value='Submit' onclick='submit()'>
+    </p>    
+</div>
+<script>
+function submit(){
+    if(confirm('Are you sure you want to submit?')==true){
+     alert('Your teacher will grade it and get back to you.')
+    }
+    else{
+        alert('Make any changes you need to.')
+    }
+}
+</script>
+
+  </body>
+</html>

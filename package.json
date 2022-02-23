@@ -1,0 +1,16 @@
+{
+  "name": "ela",
+  "version": "1.0.0",
+  "description": "This is my practice ELA site",
+  "main": "writing.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
