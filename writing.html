@@ -4,60 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" /> 
     <title>Project ELAR</title>
-    <style>
-        body{
-            background: linear-gradient(15deg, #ffffff 0%, #fff5ce 100%) fixed;
-            max-width: 600px;
-            text-align: center;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        h1{
-            color: #3F3FBF;
-            text-align: left
-        }
-        .check {
-            color: #40929b;
-            text-align: left;
-        }
-        .middle {
-            margin: 5 px auto;
-            border: 2 px solid #546a6d;
-            background: white;
 
-        }
-        .write {
 
-            min-width: 80%;
-
-        }
-    </style>
   </head>
   <body>
-    <h1>Module 1: Courage in the Face of Fear</h1>
-    <img src='https://media.istockphoto.com/photos/firefighters-extinguishing-house-fire-picture-id160189933?s=612x612'width=400px
-    >
-    <div class='middle'>
-    <h3>
-      <div class="top">Writing Prompt:</div>
-      Describe a time in your life when you were courageous. 
-    </h3>
-     <p>Your answer should be at least 5 sentences.</p>
-     <input class='write'type=text placeholder="Write your response here." required minlength= '128' size='15' width='300px'> 
-    <p><div class='check'>Before you submit, help yourself by checking: </div>
-        <ul class='check'><em>
-            <li>Does every sentence start with a capital letter? 
-                <input type='checkbox' id=yes name=yes required>
-                <label for='yes'>Yes</label> 
-            </li>
-            <li>Does every sentence end with a period?</li> 
-                <input type='checkbox' id=yes name='yes'required> 
-                <label for='yes'>Yes</label>
-            </li>
-            </em>
-        </ul>
-        <input type=button value='Submit' onclick='submit()'>
-    </p>    
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"> </div>
+                <div class="col-4">
+                    <h1>Project ELAR</h1>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Module 1: Courage in the Face of Fear</h2>
+            </div>
+        </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+              <h3><label for="topic">Writing Prompt:</label></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3><label for="topic">Describe a time in your life when you were courageous.</label></h3>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-6">
+            <p>Your answer should be at least 5 sentences.All sentences should start with a capital letter and end with a period.</p>
+        </div>
+     </div>
+     <div class="col-md-10">
+         <form>
+             <div class="form-group row">
+                 <div class="col-md-10">
+                        <textarea class='write'id="topic" name="topic" placeholder="Write your response here." class="form-control" rows="8"></textarea>
+                    </div>
+                </div>
+                <div class='check'>Before you submit, help yourself by checking: </div>
+                    <ul class='check'><em>
+                        <li>Does every sentence start with a capital letter? 
+                            <input type='checkbox' id=yes name=yes required>
+                            <label for='yes'>Yes</label> 
+                        </li>
+                        <li>Does every sentence end with a period?</li> 
+                            <input type='checkbox' id=yes name='yes'required> 
+                            <label for='yes'>Yes</label>
+                        </li>
+                        </em>
+                    </ul>
+                    <input type=submit value='Submit' onclick='submit()'>
+            </form>
+        </div>
+    </div>  
 </div>
 <script>
 function submit(){

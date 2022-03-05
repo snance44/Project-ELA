@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="css/styles.css" /> 
+    <title>Project ELAR</title>
+</head>
+<body>
+  <header class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Project ELAR</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-darkish stickytop">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Project ELAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="module1.html">Learning</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+        </ul>
+        <span class="navbar-text ml-auto">
+            <a role="button" class="btn btn-accent" data-toggle="modal" data-target="#loginModal" >
+              <i class="fa fa-sign-in"></i>Log In
+            </a>
+          </span>
+      </div>
+    </div>
+  </nav>
+
+
+<!--Log in Modal-->
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-lightish text-darkish">
+            <h3 class="modal-title">Log In</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body bg-med">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginEmail">Email address</label>
+                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                  </div>
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginPassword">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label text-light"> Remember me</label>                    
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-accent btn-sm ml-1">Sign in</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Accordion information about ELAR-->
+  <div class="container">
+    <div class="row row-content">
+      <div class="col-sm-12">
+        <div class="accordion" id="accordion">
+          <div class="card">
+            <div role="tab" class="card-header bg-xlightish">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left bg-xlightish text-darkish" type="button" data-toggle="collapse" data-target="#collapseOne">
+                  What does Project ELAR offer?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                Project ELAR is a unit-based ELAR website. The website leads students through modules that include a reading passage, comprehension questions, grammar practice, and a writing prompt. 
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div role="tab" class="card-header bg-lightish" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn bg-lightish text-darkish btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                  How is Project ELAR different than other ELAR websites?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Some ELAR websites are auto-graded and force students to read a different passage for each question. There are also websites that are entirely teacher-graded. Project ELAR allows students to read one or two passages per module and then answer questions that are mostly auto-graded, but integrates some teacher-graded material when necessary for a fuller experience. 
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header bg-accent" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn bg-accent text-light btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  How much will I have to grade using Project ELAR?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Most of the content is auto-graded. Short answer responses and essay prompts are not auto-graded. 
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header bg-med" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn bg-med text-light btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                  What is the price of Project ELAR?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Currently, Project ELAR is free. The concept is experimental. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+            <a class="footer-link" href="aboutus.html">About Us</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

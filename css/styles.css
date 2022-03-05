@@ -1,0 +1,61 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+.bg-med{
+    background-color: #2c4d4e;
+}
+.bg-darkish{
+    background-color: #141E27;
+}
+.bg-accent{
+    background-color: #7F95D1;
+}
+.bg-slightish{
+    background-color: #D2D5DD;
+}
+.bg-lightish{
+    background-color: #E8EBE4;
+}
+.text-med{
+    color: #2c4d4e;
+}
+.text-dark{
+    color: #141E27;
+}
+.text-accent{
+    color: #7F95D1;
+}
+.text-xlightish{
+    color: #D2D5DD;
+}
+.text-lightish{
+    color: #E8EBE4;
+}
+.btn-accent{
+    background-color: #7F95D1;
+    color: white;
+}
+.btn-accent:hover{
+    background-color:#5a76C4;
+    color: white;
+}
+.jumbotron {
+    margin:0;
+    padding:30px;
+    background: linear-gradient(to top, #141E27 0%,#2c4d4e  100%);
+    color: white;
+}
+h1{
+    font-size: 3em;
+}
+h1, h2{
+    text-align: left
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height:200px;
+}
+
+
