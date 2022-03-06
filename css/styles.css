@@ -35,8 +35,31 @@ body {
     background-color: #7F95D1;
     color: white;
 }
+.btn-darkish{
+    background-color: #141E27;
+    color: white;
+}
+.btn-darkish:hover{
+    background-color: #141E27;
+    color: white;
+}
 .btn-accent:hover{
     background-color:#5a76C4;
+    color: white;
+}
+.btn-lightish{
+    background-color: #E8EBE4;
+    color: #141E27;
+}
+.btn-lightish:hover{
+    background-color: #d7dcd0;
+}
+.nav-module{
+    background-color: #D2D5DD;
+    color: #2c4d4e;
+}
+.nav-module:hover{
+    background-color: #141E27;
     color: white;
 }
 .jumbotron {
@@ -44,6 +67,9 @@ body {
     padding:30px;
     background: linear-gradient(to top, #141E27 0%,#2c4d4e  100%);
     color: white;
+}
+.bg-module{
+    margin: 1em #141E27;
 }
 h1{
     font-size: 3em;

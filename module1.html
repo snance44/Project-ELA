@@ -29,13 +29,13 @@
     </div>
   </header>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-darkish stickytop">
+  <nav class="navbar navbar-expand-md navbar-dark bg-darkish sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Project ELAR</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
@@ -93,26 +93,95 @@
       </div>
     </div>
     <section>
-        <div class="container">
-            <div class="row row-content">
-                <div class="col-3">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-                    </div>
-                </div>
-                <div class="col-9">
-                    <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-                    </div>
-                </div>
-                </div>
-                        </div>
+<!--Week 3 Content- tabs -->
+    <div class="container">
+        
+      <div class="row row-content">
+        <div class="col-sm-2 bg-module">
+            <ul class="nav nav-tabs flex-column mr-3 mb-3">
+                <li class="nav-item nav-module">
+                    <a class="nav-link active nav-module" href="#intro" role="tab" data-toggle="tab">Introduction</a>
+                </li>
+                <li class="nav-item nav-module">
+                    <a class="nav-link nav-module" href="#passage1" role="tab" data-toggle="tab"
+                    >Passage</a
+                >
+                </li>
+                <li class="nav-item nav-module">
+                    <a class="nav-link nav-module" href="#quiz1" role="tab" data-toggle="tab"
+                    >Quiz</a
+                >
+                </li>
+                <li class="nav-item nav-module">
+                    <a class="nav-link nav-module" href="#grammar1" role="tab" data-toggle="tab"
+                    >Grammar</a
+                >
+                </li>
+                </li>
+                <li class="nav-item nav-module">
+                <a class="nav-link nav-module" href="#writing1" role="tab" data-toggle="tab"
+                    >Write</a
+                >
+                </li>
+            </ul>
+          </div>
+          <div class="col-8">
+          <div class="tab-content">
+            <div
+              role="tabpanel"
+              class="tab-pane fade show active"
+              id="intro"
+            >
+              <h4>
+                In this module you will: 
+              </h4>
+              <ul class="d-none d-sm-block">
+                <li>Read about Sparrow.</li>
+                <li>Take a quiz over the passage.</li>
+                <li>Learn the basics about writing a sentence.</li>
+                <li>Write about a time you were brave.</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="passage1">
+              <h4>
+                Sparrow: The Courageous Dog
+              </h4>
+              <p class="d-none d-sm-block">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="quiz1">
+              <h4>
+                Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small>
+              </h4>
+              <p class="d-none d-sm-block">
+                Need a new fishing pole, a tacklebox, or flies of all kinds?
+                Stop by Mongo Fly Shop.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="grammar1">
+              <h4>
+                Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small>
+              </h4>
+              <p class="d-none d-sm-block">
+                From polar fleeces to swimsuits, hiking boots to waders, a visit
+                to Node will be sure to get you covered.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="writing1">
+              <h4>
+                Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small>
+              </h4>
+              <p class="d-none d-sm-block">
+                From polar fleeces to swimsuits, hiking boots to waders, a visit
+                to Node will be sure to get you covered.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+     
     </section>
   <footer>
     <div class="container">
